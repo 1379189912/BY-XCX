@@ -1,0 +1,27 @@
+<!--pages/shoppcart/shoppcart.wxml-->
+<view class="big-view">
+	<view wx:if="{{checkedId}}" class="asa"><text class="bianji" bindtap="bianJi" >编辑</text></view>
+	<view class="asa" wx:if="{{!checkedId}}"><text class="bianji1" bindtap="canCel" >取消</text><text class="bianji" bindtap="delAll">删除</text></view>
+	<van-swipe-cell class="card" right-width="{{ 65 }}" wx:for="{{addcar}}" wx:key="index" wx:if="{{card}}">
+		<checkbox-group bindchange="checkboxChange" data-a="{{item.Id}}" class="sa" wx:if="{{!checkedId}}">
+  <label>
+    <checkbox value="{{item.Id}}" checked="{{checked}}"/>
+  </label>
+
+	
+</checkbox-group>
+		<view class="numList">
+			<van-stepper value="{{item.count}}" bind:plus="addNum" data-shoopid="{{item.Id}}" bind:minus="remNum" />
+		</view>
+		<van-card custom-class="card" price="{{item.price}}" desc="{{item.supplier}}" title="{{item.title}}" thumb="{{item.img_url}}" />
+		<view slot="right" class="gight-del" data-shopid="{{item.Id}}" bindtap="delShopinfo">删除</view>
+	</van-swipe-cell>
+</view>
+<!-- 提交 -->
+<van-submit-bar disabled price="{{total*100}}" button-text="提交订单" bind:submit="onClickButton" tip="{{ true }}" decimal-length="2" custom-class="sub-border" wx:if="{{!submit}}" custom-class="sub-border">
+</van-submit-bar>
+<van-submit-bar wx:else  price="{{total*100}}" button-text="提交订单" bind:submit="onClickButton" tip="{{ true }}" decimal-length="2" custom-class="sub-border">
+
+	<checkbox data-so="{{b}}" bindtap="selectall" checked="{{checked}}" />全选
+	<!-- <view slot="tip">您的收货地址不支持同城送, <text>修改地址</text></view> -->
+</van-submit-bar>

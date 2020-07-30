@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-card": "@vant/weapp/card/index",
+    "van-swipe-cell": "@vant/weapp/swipe-cell/index",
+    "van-submit-bar": "@vant/weapp/submit-bar/index",
+    "van-stepper": "@vant/weapp/stepper/index",
+    "van-checkbox": "@vant/weapp/checkbox/index",
+  "van-checkbox-group": "@vant/weapp/checkbox-group/index",
+  "van-nav-bar": "@vant/weapp/nav-bar/index"
+  },
+  "navigationBarTitleText": "购物车"
+}

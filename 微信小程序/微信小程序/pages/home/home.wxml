@@ -1,0 +1,56 @@
+<!--pages/home/home.wxml-->
+<!-- 首页 -->
+<view class="big-nav">
+  <view class="nav">
+    <view class="nav-left">
+      <image src="../../images/nav/logo.png" class="logo"></image>
+      <view class="slogan">人生无趣，但有可爱的你</view>
+    </view> 
+    <view class="nav-right">
+      <text class="year">{{year}}</text>
+      <text>{{day}}</text>
+      <image class="time" src="../../images/alde/time.png"></image>
+    </view>
+  </view>
+<!-- 轮播图 -->
+  <view class="alde"> 
+    <swiper indicator-dots="true" autoplay="true" interval='5000' indicator-active-color="white" circular="true" class="alde-img">
+        <swiper-item><image src="../../images/alde/1.jpg"></image></swiper-item>
+        <swiper-item><image src="../../images/alde/2.jpg"></image></swiper-item>
+        <swiper-item><image src="../../images/alde/3.jpg"></image></swiper-item>
+        <swiper-item><image src="../../images/alde/4.jpg"></image></swiper-item>
+        <swiper-item><image src="../../images/alde/5.jpg"></image></swiper-item>
+    </swiper>
+  </view>
+</view>
+<!-- 通知栏 -->
+<view class="tongzhi">
+    <van-notice-bar
+    mode="closeable"
+    text="你慢一点我慢一点,文明的步伐快一点;你让一点我让一点,舒心的笑容多一点;你讲安全我讲安全,美好生活到永远。"
+  />
+</view>
+ <!-- 搜索框 -->
+<view class="input-view">
+  <view class="input-view-big">
+    <view class="input-view-left">
+      <input type="text" placeholder="请输入搜索内容" bindinput="talk"></input>
+    </view>
+    <view class="input-view-right" bindtap="seek">
+      <image src="../../images/alde/icon-ss.png"></image>
+    </view>
+  </view>
+</view>
+<view class="shopList">
+  ——  猜你喜欢  ——
+</view>
+<!-- 首页商品列表 -->
+<view class="home-shopList-view" bin>
+  <view wx:for="{{homeShoplist}}" wx:key="index" class="home-shopList-big" bindtap="getShopInfo" data-shopid="{{item.Id}}" data-shoptitle="{{item.title}}">
+  <image src="{{item.img_list_url}}" class="home-shopList-img"></image>
+    <view class="home-shopList-title">{{item.title}}</view>
+    <view class="home-shopList-price">￥{{item.price}}</view>
+    <rich-text nodes="{{item.mack}}" class="home-shopList-mack"></rich-text>  
+  </view>
+</view>
+

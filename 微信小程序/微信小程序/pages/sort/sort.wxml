@@ -1,0 +1,21 @@
+<!--pages/sort/sort.wxml-->
+<!-- 一级菜单 -->
+<view class="shopinfo-view">
+<!-- 分类侧边栏 -->
+  <view class="shopinfo-left">
+    <view wx:for="{{shopList}}" wx:key="index" class="shop-view" bindtap="shopInfoList" data-shopinfo="{{item}}">
+      <view>{{item}}</view>
+    </view>
+  </view>
+  <!-- 展示内容 -->
+  <view class="content-right">
+    <view wx:for="{{shopinfoList}}" wx:key="index" class="shopinfo-img" bindtap="getToshopInfo"
+    data-shopid="{{item.Id}}">
+      <image src="{{item.img_list_url}}" class="home-shopList-img"></image>
+      <view class="home-shopList-title">{{item.title}}</view>
+      <view class="home-shopList-price">￥{{item.price}}</view>
+      <rich-text nodes="{{item.mack}}" class="home-shopList-mack"></rich-text> 
+    </view>
+  </view>
+</view>
+

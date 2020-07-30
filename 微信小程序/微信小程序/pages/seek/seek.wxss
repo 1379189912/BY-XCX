@@ -1,0 +1,13 @@
+.home-shopList-big{
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 2rpx;
+}
+.view-right{
+  flex: 1;
+  margin-top: 20rpx;
+}
+.home-shopList-img{
+  width: 300rpx;
+  height: 180rpx;
+}

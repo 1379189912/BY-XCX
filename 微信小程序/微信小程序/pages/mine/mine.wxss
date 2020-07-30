@@ -1,0 +1,154 @@
+.mine-input-big{
+  /* position: relative; */
+  margin-top: 50%;
+  border: 1rpx solid cornflowerblue;
+  border-radius: 30rpx;
+  overflow: hidden;
+}
+/* 单选框 */
+.regist{
+  position: relative;
+  left: 200rpx;
+  font-size: 30rpx;
+  top: 20rpx;
+}
+.err{
+  text-align: center;
+  margin-top: 50rpx;
+  color: red;
+}
+/* 登录后的样式 */
+/* pages/user/index.wxss */
+/* pages/user/index.wxss */
+page {
+  background-color: #edece8;
+}
+.user_info_wrap {
+  height: 20vh;
+  overflow: hidden;
+  
+}
+.userName{
+  position: relative;
+  left: 200rpx;
+  top: -100rpx;
+  width: 50%;
+  overflow: hidden;
+  border: 1rpx solid red;
+}
+.user_info_wrap .user_img_wrap {
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  background-color: white;
+}
+.user_info_wrap .user_img_wrap .user_bg {
+  height: 20vh;
+  width: 95%;
+}
+.user_info_wrap .user_img_wrap .user_info {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  text-align: center;
+}
+.user_info_wrap .user_img_wrap .user_info .user_icon {
+  width: 190rpx;
+  height: 190rpx;
+  border-radius: 50%;
+}
+.user_info_wrap .user_img_wrap .user_info .user_name {
+  color: #fff;
+  margin-top: 30rpx;
+  font-size: 40rpx;
+}
+.user_info_wrap .user_btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15%;
+}
+.user_content {
+  position: relative;
+}
+.user_content .user_main {
+  padding-bottom: 70rpx;
+  color: #666;
+  position: absolute;
+  width: 95%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40rpx;
+}
+.user_content .user_main .history_wrap {
+  background-color: #fff;
+  display: flex;
+}
+.user_content .user_main .history_wrap navigator {
+  flex: 1;
+  text-align: center;
+  padding: 10rpx 0;
+}
+.user_content .user_main .history_wrap navigator .his_num {
+  color:red;
+}
+.user_content .user_main .history_wrap navigator .his_name {
+  
+  font-size: 30rpx;
+}
+.user_content .user_main .orders_wrap {
+  background-color: #fff;
+  margin-top: 30rpx;
+}
+.user_content .user_main .orders_wrap .orders_title {
+  padding: 20rpx;
+  border-bottom: 1px solid #ccc;
+  font-size: 32rpx;
+}
+.user_content .user_main .orders_wrap .order_name {
+  
+  font-size: 32rpx;
+}
+.user_content .user_main .orders_wrap .orders_content {
+  display: flex;
+}
+.user_content .user_main .orders_wrap .orders_content navigator {
+  flex: 1;
+  text-align: center;
+  padding: 15rpx 0;
+}
+.user_content .user_main .orders_wrap .orders_content navigator .iconfont {
+  color: var(--themeColor);
+}
+.user_content .user_main .address_wrap {
+  margin-top: 30rpx;
+  background-color: #fff;
+  font-size: 32rpx;
+  padding: 20rpx;
+}
+.user_content .user_main .app_info_wrap {
+  margin-top: 30rpx;
+  background-color: #fff;
+}
+.user_content .user_main .app_info_wrap .app_info_item {
+  padding: 20rpx;
+  font-size: 32rpx;
+  border-bottom: 1px solid #ccc;
+}
+.user_content .user_main .app_info_wrap .app_info_contact {
+  display: flex;
+  justify-content: space-between;
+}
+.user_content .user_main .recommend-wrap {
+  margin-top: 30rpx;
+  background-color: #fff;
+  padding: 20rpx;
+  font-size: 35rpx;
+}
+.button{
+  margin-top: 20rpx;
+}
+.userName{
+  border: 1rpx solid red;
+}

@@ -1,0 +1,11 @@
+<!--pages/seek/seek.wxml-->
+<view wx:for="{{shopList}}" wx:key="index" class="home-shopList-big" bindtap="getShopInfo" data-shopid="{{item.Id}}" data-shoptitle="{{item.title}}">
+  <view>
+    <image src="{{item.img_list_url}}" class="home-shopList-img"></image>   
+  </view>
+  <view class="view-right">
+  <view class="home-shopList-title">{{item.title}}</view>
+      <view class="home-shopList-price">￥{{item.price}}</view>
+      <rich-text nodes="{{item.mack}}" class="home-shopList-mack"></rich-text>  
+  </view>
+</view>

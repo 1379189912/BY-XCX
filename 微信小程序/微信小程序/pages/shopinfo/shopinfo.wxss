@@ -1,0 +1,66 @@
+/* pages/shopinfo/shopinfo.wxss */
+.home-shopList-view{
+  border: 1rpx solid red;
+}
+.home-shopList-title{
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+.home-shopList-price{
+  margin-left: 20rpx;
+  color: red;
+  font-size: 60rpx;
+}
+/* 底部按钮 */
+/* .bottom{
+  border-top: 1rpx solid #ccc;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+} */
+/* .button-left{
+  border: 1rpx solid red;
+  color: red;
+} */
+/* .button-right{
+  background-color: red;
+  color: white;
+} */
+/* 弹出层的图片 */
+.showPopup-big-img{
+  width: 190rpx;
+  height: 130rpx;
+  border: 1rpx solid #ccc;
+  margin-top: 10rpx;
+}
+.showPopup-img{
+  width: 180rpx;
+  height: 120rpx;
+}
+.showPopup-price{
+  position: relative;
+  font-size: 30rpx;
+  color: red;
+  left: 200rpx;
+  top: -20rpx;
+}
+.showPopup-number{
+position: absolute;
+right: 30rpx;
+top: 180rpx;
+}
+.showPopup-text{
+  position: absolute;
+  
+  left: 30rpx;
+  top: 190rpx;
+}
+.showPopup-button{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: red;
+  color: white;
+}
